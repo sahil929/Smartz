@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+       <variable
+           name="booking"
+           type="com.example.smartz.model.Booking"/>
+    </data>
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/margin_10dp"
+    android:layout_marginEnd="@dimen/margin_10dp"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/booking_id"
+                style="@style/textViewStyle"
+                android:textSize="14sp"
+                android:textColor="@color/color_36363C"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/textViewStyle"
+                android:textSize="14sp"
+                android:id="@+id/tvBookingId"
+                android:text="@{booking.boookingId}"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:singleLine="true"
+                android:textColor="@color/color_36363C"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/booking_date"
+                style="@style/textViewStyle"
+                android:textSize="14sp"
+                android:textColor="@color/color_36363C"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textViewStyle"
+                android:textSize="14sp"
+                android:id="@+id/tvDate"
+                android:text="@{booking.startDate}"
+                android:layout_marginStart="@dimen/margin_30dp"
+                android:textColor="@color/color_36363C"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_slots"
+                style="@style/textViewStyle"
+                android:textSize="14sp"
+                android:textColor="@color/color_36363C"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="50dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textViewStyle"
+                    android:textSize="14sp"
+                    android:text="@{booking.slot}"
+                    android:textColor="@color/color_36363C"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slot_location"
+                style="@style/textViewStyle"
+                android:textSize="14sp"
+                android:textColor="@color/color_36363C"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textViewStyle"
+                    android:textSize="14sp"
+                    android:text="@{booking.slotLocation}"
+                    android:textColor="@color/color_36363C"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewStyle"
+            android:textSize="14sp"
+            android:id="@+id/tvParkCar"
+            android:paddingTop="5dp"
+            android:gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="end"
+            android:paddingBottom="5dp"
+            android:text="@string/park_car"
+            android:background="@drawable/solid_back"
+            android:paddingStart="@dimen/padding_10dp"
+            android:paddingEnd="@dimen/padding_10dp"
+            android:backgroundTint="@color/mdtp_accent_color"
+            android:layout_marginStart="@dimen/margin_50dp"
+            android:textColor="@color/color_ffffff"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</layout>

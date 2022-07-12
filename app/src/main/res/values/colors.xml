@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#111111</color>
+    <color name="colorPrimaryDark">#111111</color>
+    <color name="colorAccent">#1996f3</color>
+    <color name="color_bcbcbc">#bcbcbc</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_f1453d">#f1453d</color>
+    <color name="color_e0f1fd">#e0f1fd</color>
+    <color name="color_3a3a3a">#3a3a3a</color>
+    <color name ="color_ffffff">#ffffff</color>
+    <color name="color_5f5e5e">#5f5e5e</color>
+    <color name="color_1996f3">#1996f3</color>
+    <color name ="color_111111">#111111</color>
+    <color name ="color_0058a3">#0058a3</color>
+    <color name ="color_d5f5d7">#D5DFD7</color>
+    <color name ="color_f5f5f5">#f5f5f5</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+    <color name="text_color_666666">#666666</color>
+    <color name="color_b4b4b4">#b4b4b4</color>
+    <color name="color_FAF9F9">#FAF9F9</color>
+    <color name="color_FFECAB">#FFD441</color>
+    <color name="color_B5962F">#B5962F</color>
+    <color name ="color_7F8181">#7F8181</color>
+    <color name="color_949292">#949292</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+    <color name="color_0f0f57">#05051E</color>
+    <color name="color_36363C">#36363C</color>
+</resources>

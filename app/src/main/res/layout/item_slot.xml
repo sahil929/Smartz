@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="120dp"
+            android:id="@+id/layout_item_slot"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:background="@drawable/round_layout_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_111111"
+                android:textStyle="bold" />
+        </LinearLayout>
+</layout>

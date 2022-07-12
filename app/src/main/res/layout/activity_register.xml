@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="registerModel"
+            type="com.example.smartz.model.RegisterModel" />
+
+        <variable
+            name="registerViewModel"
+            type="com.example.smartz.register.RegisterVM" />
+
+        <import type="com.example.smartz.register.RegisterVM.ERRORS" />
+
+        <import type="android.view.View"/>
+    </data>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:background="@drawable/back"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:fillViewport="true"
+           android:layout_height="match_parent">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <include layout="@layout/progress_bar"
+                   android:layout_height="match_parent"
+                   android:layout_width="match_parent"
+                   android:id="@+id/loginProgressBar"
+                   android:visibility="gone"
+                   android:layout_centerInParent="true"/>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_marginStart="@dimen/margin_40dp"
+                   android:layout_marginEnd="@dimen/margin_40dp"
+                   app:cardCornerRadius="10dp"
+                   app:cardBackgroundColor="@android:color/transparent"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:orientation="vertical"
+                       android:layout_height="match_parent">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           style="@style/textViewStyle"
+                           android:padding="7dp"
+                           android:layout_marginTop="50dp"
+                           android:textColor="@color/color_ffffff"
+                           android:text="@string/crete_account"
+                           android:textStyle="bold"
+                           android:textSize="22sp"
+                           android:layout_height="wrap_content"/>
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           style="@style/TextInputEditTextStyle"
+                           android:hint="@string/enter_name"
+                           android:paddingStart="@dimen/padding_20dp"
+                           android:textColor="@color/color_ffffff"
+                           android:textColorHint="@color/color_ffffff"
+                           android:paddingEnd="@dimen/padding_10dp"
+                           android:text="@={registerModel.name}"
+                           android:layout_marginTop="30dp"
+                           android:singleLine="true"
+                           android:layout_height="@dimen/height_50dp"/>
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           style="@style/TextInputEditTextStyle"
+                           android:hint="@string/enter_mobile"
+                           android:paddingStart="@dimen/padding_20dp"
+                           android:digits="0123456789"
+
+                           android:textColor="@color/color_ffffff"
+                           android:textColorHint="@color/color_ffffff"
+                           android:paddingEnd="@dimen/padding_10dp"
+                           android:text="@={``+registerModel.mobileNo}"
+                           android:layout_marginTop="@dimen/margin_30dp"
+                           android:layout_height="@dimen/height_50dp"/>
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           style="@style/TextInputEditTextStyle"
+                           android:hint="@string/enter_password"
+                           android:paddingStart="@dimen/padding_20dp"
+                           android:textColor="@color/color_ffffff"
+                           android:inputType="textPassword"
+                           android:textColorHint="@color/color_ffffff"
+                           android:paddingEnd="@dimen/padding_10dp"
+                           android:text="@={registerModel.password}"
+
+                           android:layout_marginTop="@dimen/margin_30dp"
+                           android:layout_height="@dimen/height_50dp"/>
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:layout_width="match_parent"
+                           style="@style/TextInputEditTextStyle"
+                           android:hint="@string/enter_vehicle"
+                           android:paddingStart="@dimen/padding_20dp"
+                           android:textColor="@color/color_ffffff"
+                           android:textColorHint="@color/color_ffffff"
+                           android:paddingEnd="@dimen/padding_10dp"
+                           android:text="@={registerModel.licenseNo}"
+                           android:layout_marginTop="@dimen/margin_30dp"
+                           android:layout_height="@dimen/height_50dp"/>
+
+
+                       <Button
+                           android:layout_width="match_parent"
+                           android:text="@string/register"
+                           android:id="@+id/btnRegister"
+                           android:textStyle="bold"
+                           android:layout_marginTop="@dimen/margin_50dp"
+                           android:layout_height="60dp">
+
+                       </Button>
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+           </RelativeLayout>
+       </ScrollView>
+
+   </LinearLayout>
+</layout>

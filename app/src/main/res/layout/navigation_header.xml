@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:background="@color/color_111111"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_ffffff"
+            style="@style/textViewStyle"
+            android:textSize="16sp"
+            android:text="@string/app_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMobile"
+            android:background="@color/color_FFECAB"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_FAF9F9"
+            style="@style/textViewStyle"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:text="9915410702"
+            />
+
+    </LinearLayout>
+</LinearLayout>

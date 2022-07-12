@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loginModel"
+            type="com.example.smartz.model.LoginModel" />
+
+        <variable
+            name="loginViewModel"
+            type="com.example.smartz.login.LoginVM" />
+
+        <import type="com.example.smartz.login.LoginVM.ERRORS" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/back"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/progress_bar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/loginProgressBar"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+     <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_marginStart="@dimen/margin_40dp"
+         android:layout_marginEnd="@dimen/margin_40dp"
+         app:cardCornerRadius="10dp"
+         app:cardBackgroundColor="@android:color/transparent"
+         android:layout_centerInParent="true"
+         android:layout_height="wrap_content">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_height="match_parent">
+             <TextView
+                 android:layout_width="wrap_content"
+                 style="@style/textViewStyle"
+                 android:padding="7dp"
+                 android:textColor="@color/color_ffffff"
+                 android:text="@string/login_into_account"
+                 android:textStyle="bold"
+                 android:textSize="22sp"
+                 android:layout_marginBottom="@dimen/margin_50dp"
+                 android:layout_height="wrap_content"/>
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 style="@style/TextInputEditTextStyle"
+                 android:hint="@string/enter_mobile"
+                 android:paddingStart="@dimen/padding_20dp"
+                 android:textColor="@color/color_ffffff"
+                 android:textColorHint="@color/color_ffffff"
+                 android:paddingEnd="@dimen/padding_10dp"
+                 android:digits="0123456789"
+                 android:text="@={``+loginModel.mobileNo}"
+                 android:singleLine="true"
+                 android:layout_height="@dimen/height_50dp"/>
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 style="@style/TextInputEditTextStyle"
+                 android:hint="@string/enter_password"
+                 android:paddingStart="@dimen/padding_20dp"
+                 android:textColor="@color/color_ffffff"
+                 android:inputType="textPassword"
+                 android:textColorHint="@color/color_ffffff"
+                 android:paddingEnd="@dimen/padding_10dp"
+                 android:text="@={loginModel.password}"
+                 android:layout_marginTop="@dimen/margin_30dp"
+                 android:layout_height="@dimen/height_50dp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 style="@style/textViewStyle"
+                 android:gravity="end"
+                 android:padding="7dp"
+                 android:visibility="gone"
+                 android:layout_marginTop="7dp"
+                 android:layout_gravity="end"
+                 android:textColor="@color/color_ffffff"
+                 android:text="@string/forgot_password"
+                 android:layout_height="wrap_content"/>
+
+              <Button
+                  android:layout_width="match_parent"
+                  android:text="@string/login"
+                  android:textStyle="bold"
+                  android:id="@+id/btnLogin"
+                  android:layout_marginTop="@dimen/margin_30dp"
+                  android:layout_height="60dp">
+
+              </Button>
+         </LinearLayout>
+
+     </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

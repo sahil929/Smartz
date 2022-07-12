@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Smartz</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_mobile">Enter Mobile No.</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="donot_have_account">Don\'t have account?</string>
+    <string name="crete_account">Create an account</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_vehicle">Enter Vehicle No.</string>
+    <string name="register">Register</string>
+    <string name="login_into_account">Login into your account</string>
+    <string name="Wwelcome_to_smartz">Welcome /n to /n Smartz</string>
+    <string name="Wwelcome_to">Welcome to</string>
+    <string name="welcome_to">"Welcome to "</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="already_have_an_account">I already have an account</string>
+    <string name="slots">Slots</string>
+    <string name="description">Ream Piyari Street, Lalluana Road, Mansa</string>
+    <string name="view_detail">View Detail</string>
+    <string name="slot_status">Slot Status</string>
+    <string name="booked">Booked</string>
+    <string name="available">Available</string>
+    <string name="occupied">Occupied</string>
+    <string name="slot_name">Slot Name</string>
+    <string name="slot_location">Slot Location</string>
+    <string name="slot_detail">Slot Detail</string>
+    <string name="slot_booking"><u>Slot Bookings</u></string>
+    <string name="booking_date">Booking Date:</string>
+    <string name="book_slots">Time Slots:</string>
+    <string name="book_Slot">Book Slot</string>
+    <string name="mybooking">My Bookings</string>
+    <string name="logout">Logout</string>
+    <string name="deactive">Deactivate</string>
+    <string name="first_name">First Name</string>
+    <string name="booking_id">Booking Id</string>
+
+    <string name="Submit">Submit</string>
+
+    <string name = "select_date">Select Date</string>
+    <string name="parking_slots">Parking Slots</string>
+    <string name="no_data">No Booking Data Available</string>
+    <string name="park_car">Park a vehicle</string>
+</resources>

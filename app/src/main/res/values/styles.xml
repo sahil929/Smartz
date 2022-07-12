@@ -1,0 +1,141 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="materialButtonStyle">@style/BlueBtnComponent</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="android:textColorHint">@color/color_1996f3</item>
+        <item name="alertDialogTheme">@style/alertDialog</item>
+    </style>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/color_ffffff</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="android:textColorHint">@color/text_input_stroke_color</item>
+    </style>
+    <style name="BlackTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/color_d8d8d8</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="android:textColorHint">@color/text_input_stroke_color</item>
+    </style>
+
+    <style name="DropDownLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/color_ffffff</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="android:textColorHint">@color/text_input_stroke_color</item>
+    </style>
+    <style name="TextInputEditTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/color_3a3a3a</item>
+        <item name="android:background">@drawable/edit_text_back</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:fontFamily">@font/app_font</item>
+    </style>
+    <style name="MyHintStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_3a3a3a</item>
+        <item name="hintTextColor">@color/color_3a3a3a</item>
+        <item name="colorAccent">@color/color_3a3a3a</item>
+        <item name="colorControlNormal">@color/color_3a3a3a</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="colorControlActivated">@color/color_3a3a3a</item>
+    </style>
+    <style name="BlueBtnComponent" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/color_111111</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="height">60dp</item>
+        <item name="android:backgroundTint">@color/color_ffffff</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="CurvedBtnComponent" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/color_111111</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="height">60dp</item>
+        <item name="android:backgroundTint">@color/color_ffffff</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+    <style name="StrokeCurvedBtnComponent" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/color_111111</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="height">60dp</item>
+        <item name="android:background">@drawable/stroke_back</item>
+        <item name="android:backgroundTint">@color/color_ffffff</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="GreenBtnComponent" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="android:height">@dimen/height_50dp</item>
+    </style>
+
+    <style name="WhiteBtnComponent" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/color_ffffff</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="android:height">@dimen/height_50dp</item>
+    </style>
+
+    <style name="textViewStyle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/app_font</item>
+    </style>
+    <style name="errorTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_f1453d</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:fontFamily">@font/app_font</item>
+    </style>
+    <style name="NewDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="alertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_ffffff</item>
+        <item name="colorPrimary">@color/color_ffffff</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="buttonBarNegativeButtonStyle">@style/negativeButton</item>
+        <item name="buttonBarPositiveButtonStyle">@style/positiveButton</item>
+
+    </style>
+
+    <style name="negativeButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <style name="positiveButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <style name="Theme.AppCompat.Transparent.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

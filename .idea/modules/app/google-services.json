@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "635788469756",
+    "firebase_url": "https://smartz-e72f2.firebaseio.com",
+    "project_id": "smartz-e72f2",
+    "storage_bucket": "smartz-e72f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635788469756:android:9427ac860b3830d104be79",
+        "android_client_info": {
+          "package_name": "com.example.smartz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635788469756-hd6ic6ier5346shi1idlbb945afcmbo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartz",
+            "certificate_hash": "b6cf39200c6fc618e04f1861a06bacf9c3164d96"
+          }
+        },
+        {
+          "client_id": "635788469756-8g99vnhtf8b0a0sfvuidjavspguri86b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABUdx9nC_h5vw4o3S8gxgYe_Im8yEoQJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635788469756-8g99vnhtf8b0a0sfvuidjavspguri86b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bookSlotVm"
+            type="com.example.smartz.bookings.BookSlotVm" />
+        <variable
+            name="bookSlotModel"
+            type="com.example.smartz.model.BookSlotModel" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".bookings.BookSlotActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <include layout="@layout/progress_bar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/slotProgressBar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText1"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:ems="10"
+            android:text="@={bookSlotModel.vehicleNumber}"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/color_d8d8d8"
+            android:layout_width="match_parent"
+            style="@style/TextInputEditTextStyle"
+            android:paddingStart="@dimen/padding_20dp"
+            android:textColor="@color/color_111111"
+            android:textColorHint="@color/color_111111"
+            android:paddingEnd="@dimen/padding_10dp"
+            android:digits="0123456789"
+            android:singleLine="true"
+            android:layout_height="@dimen/height_50dp"
+            android:hint="Enter Vehicle Number" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/padding_20dp"
+            android:textColor="@color/color_111111"
+            android:textColorHint="@color/color_111111"
+            style="@style/TextInputEditTextStyle"
+            android:backgroundTint="@color/color_d8d8d8"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:ems="10"
+            android:onClick="@{()->bookSlotVm.clickToSelectDate()}"
+            android:hint="Enter Date" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:id="@+id/booking_Slot"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:id="@+id/submit_booking"
+            style="@style/textViewStyle"
+            android:textColor="@color/color_ffffff"
+            android:text="@string/Submit"
+            android:background="@drawable/solid_back"
+            android:layout_height="@dimen/height_50dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</layout>

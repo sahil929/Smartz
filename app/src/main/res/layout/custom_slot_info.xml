@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="user"
+            type="com.example.smartz.model.Body">
+        </variable>
+    </data>
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:layout_marginStart="@dimen/margin_10dp"
+    android:layout_marginEnd="@dimen/margin_10dp"
+    app:cardBackgroundColor="#ffffff"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/slot_status_indicator"
+            android:layout_width="3dp"
+            android:minHeight="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/tvLocationDetail"
+            android:background="#4CAF50"
+            android:layout_height="50dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingStart="12dp"
+            android:layout_alignTop="@+id/tvViewDetail"
+            android:id="@+id/tvLocation"
+            android:text="@{user.parkingName}"
+            android:textColor="@color/color_0f0f57"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/margin_12dp"
+            android:layout_below="@+id/tvLocation"
+            android:paddingBottom="12dp"
+            android:paddingTop="7dp"
+            android:visibility="visible"
+            android:text="@{user.parkingLocation}"
+            android:layout_alignStart="@+id/tvLocation"
+            android:layout_toStartOf="@+id/tvViewDetail"
+            android:id="@+id/tvLocationDetail"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:textColor="@color/color_36363C"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/view_detail"
+            android:id="@+id/tvViewDetail"
+            android:layout_marginTop="@dimen/margin_12dp"
+            android:layout_marginEnd="@dimen/margin_12dp"
+            android:paddingStart="@dimen/padding_10dp"
+            android:paddingEnd="@dimen/padding_10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/color_0f0f57"
+            android:textSize="@dimen/text_size_12sp"
+            android:background="@drawable/stroke_black_back"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</layout>
+
